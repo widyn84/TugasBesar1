@@ -1,0 +1,379 @@
+@font-face {
+    font-family: 'NotoSansJP';
+    src: url(../assets/font/NotoSansJP-Regular.otf) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'NotoSansJP';
+    background-image: url(../assets/image/background.jpg);
+    line-height: 1.65;
+}
+
+nav {
+    display: flex;
+    background-color: red;
+    justify-content: space-around;
+    height: 50px;
+    color: white;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav .logo {
+    font-family: 'NotoSansJP';
+    letter-spacing: 3px;
+    color: white;
+    text-decoration: none;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: grey;
+}
+
+.dropbtn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    text-decoration: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.uniqlo {
+    width: 50px;
+    height: 50px;
+    background-image: url(../assets/image/logo.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    top: 0;
+}
+
+/* Ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav ul {
+        display: none;
+    }
+}
+
+.container-satu {
+    width: 1000px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.sidebar-satu ul li a {
+    text-decoration: none;
+}
+
+.kolom-utama {
+    flex-grow: 3;
+    order: 2;
+}
+
+
+.sidebar-satu {
+    flex-grow: 1;
+    order: 1;
+}
+
+.sidebar-dua {
+    flex-grow: 1;
+    order: 3;
+}
+
+.container-dua {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.alamat.satu {
+    background-color: #fff;
+}
+
+.alamat.satu a {
+    color: black;
+}
+
+.alamat.dua {
+    background-color: #fff;
+}
+
+.alamat.dua a {
+    color: black;
+}
+
+.alamat.tiga {
+    background-color: #fff;
+}
+
+.alamat.tiga a {
+    color: black;
+}
+
+.alamat {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.container-tiga {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.atasanpria {
+    text-align: center;
+    color: rgb(209, 2, 2);
+}
+
+.container-empat {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.bawahanpria {
+    text-align: center;
+    color: rgb(209, 2, 2);
+}
+
+.container-lima {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.atasanwanita {
+    text-align: center;
+    color: rgb(209, 2, 2);
+}
+
+
+.container-enam {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.bawahanwanita {
+    text-align: center;
+    color: rgb(209, 2, 2);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pria {
+    padding: 2px 16px;
+}
+
+.wanita {
+    padding: 2px 16px;
+}
+
+
+.container-tujuh {
+    max-width: 1000px;
+    display: flex;
+    box-sizing: border-box;
+    margin: 50px auto;
+}
+
+.informasi {
+    text-align: center;
+    color: rgb(209, 2, 2);
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.Tab {
+    background-color: grey;
+}
+
+.Tab2 {
+    background-color: white;
+}
+
+.contact {
+    text-align: center;
+    color: rgb(209, 2, 2);
+}
+
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-delapan {
+    max-width: 1000px;
+    display: flex;
+    margin: 50px auto;
+
+}
+
+
+.TSM {
+    text-align: center;
+    color: rgb(209, 2, 2);
+}
+
+.container-sembilan {
+    max-width: 1000px;
+    display: flex;
+    margin: 50px auto;
+}
+
+
+.PVJ {
+    text-align: center;
+    color: rgb(209, 2, 2);
+}
+
+.container-sepuluh {
+    max-width: 1000px;
+    display: flex;
+    margin: 50px auto;
+}
+
+
+.PASKAL {
+    text-align: center;
+    color: rgb(209, 2, 2);
+}
+
+.container-sebelas {
+    max-width: 1000px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+iframe {
+    width: 1000px;
+}
+
+.footer {
+    background-color: grey;
+    padding: 8px;
+}
+
+.footer .copyright {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Responsive */
+@media(min-width: 600px) {
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .alamat {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    nav ul {
+        width: 50%;
+    }
+}
